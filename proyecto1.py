@@ -165,7 +165,7 @@ print("\nSimulación finalizada. Resultados guardados en 'Resultados_produccion_
 
 
 # GRÁFICOS
-## Gráfico 1: altitud solar
+# Gráfico 1: altitud solar
 plt.figure(figsize=(12,6))
 plt.plot(fechas, altitud_solar_deg, color="red", linewidth=2)
 plt.title(f"Altitud solar vs Hora del día ({fecha_str})")
@@ -190,4 +190,5 @@ plt.grid(True)
 plt.tight_layout()
 plt.gca().xaxis.set_major_formatter(mdates.DateFormatter("%H:%M"))
 plt.gcf().autofmt_xdate()
+
 plt.show()
